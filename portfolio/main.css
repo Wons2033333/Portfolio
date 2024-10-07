@@ -1,0 +1,326 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 242, 242);
+}
+
+h1,li{
+    margin: 15px;
+    margin-left: 20px;
+}
+
+ul{
+
+    margin-bottom: 75px;
+}
+h2 {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/*-------------------header------------------*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(225, 220, 220);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+#logoimg {
+    width: 40px;
+}
+
+.header-title {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    color: rgb(3, 3, 37);
+}
+
+/*-------------------intro------------------*/
+#introduce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: rgb(21, 32, 42);
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.intro h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+#profileimg {
+    width: 200px;
+    margin: 10px;
+}
+
+/*-------------------about------------------*/
+#aboutme {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(245, 242, 242);
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    color: rgb(21, 32, 42);
+    text-align: left;
+    width: 100%;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+/*-------------------linkproject------------------*/
+#linkproject {
+    margin: 0;
+    padding: 50px 0;
+    background-color: rgb(223, 218, 218);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center; /* Center text and button */
+}
+
+#linkproject h2 {
+    margin: 0; /* Remove margin for better centering */
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(21, 32, 42);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(62, 81, 99);
+}
+/*-------------------assignments------------------*/
+#assignments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.assignment-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.assignment-content p {
+    margin-right: 30px;
+}
+
+/*-------------------footer------------------*/
+.footer {
+    background-color: rgb(21, 32, 42);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 0;
+}
+
+a {
+    color: #61a6d4;
+}
+
+/*-------------------contact------------------*/
+.contact {
+    margin-top: 10px;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; 
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/*-------------------illustrator------------------*/
+#myproject {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+#Typefaceimg, #Mockupimg,#Conceptimg, #Conceptimg2, #GameGraphic,#GameGraphic2,#GameGraphic3,#GameGraphic4{
+    width: 500px;
+}
+#Posterimg{
+    width: 300px;
+}
+#SpriteSheet,#SpriteSheet2,#SpriteSheet3 {
+    width: 330px;
+}
+#BG, #BG2, #BG3 {
+    width: 330px;
+    height: 150px;
+}
+
+/*-------------------responsive------------------*/
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    #profileimg {
+        width: 150px;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+    .assignment-content p {
+        margin-right: 20;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        text-align: center;
+    }
+/*-------------------------------------------------*/
+
+    h2 {
+        font-size: 24px; 
+        margin-left: 20px; 
+    }
+    
+    #myproject h1 {
+        font-size: 28px; 
+    }
+
+    #linkproject {
+        padding: 30px 0;
+    }
+
+    #linkproject h2 {
+        font-size: 20px; 
+    }
+
+    #Typefaceimg, #Mockupimg, #Posterimg, #Conceptimg, #Conceptimg2,
+    #GameGraphic, #GameGraphic2, #GameGraphic3, #GameGraphic4,
+    #SpriteSheet, #SpriteSheet2, #SpriteSheet3,
+    #BG, #BG2, #BG3 {
+        width: 90%; 
+        max-width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+
+    #linkproject h2,
+    #assignments h2 {
+        font-size: 24px;
+    }
+
+    .assignment-content {
+        width: 90%;
+    }
+
+    .assignment-content p {
+        margin-right: 20;
+        margin-bottom: 10px;
+    }
+
+    .button {
+
+        text-align: center;
+    }
+/*-------------------------------------------------*/
+
+
+
+
+    #myproject h1 {
+        font-size: 24px; 
+    }
+
+    h2 {
+        font-size: 20px; 
+        margin-left: 10px; 
+    }
+
+    ul img {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto;
+        display: block; 
+        margin: 10px auto; 
+    }
+
+    .button {
+        text-align: center; 
+        padding: 15px; 
+    }
+}

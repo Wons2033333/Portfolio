@@ -1,0 +1,184 @@
+body {
+	background-color: rgb(255, 251, 245);
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(255, 250, 225);
+	line-height: 25px;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2,
+h3 {
+	color: rgb(0, 0, 0);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+h3 {
+	font-size: 15px;
+	text-align: left;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+hr {
+	height: 10px;
+	border: none;
+	background-color: rgb(255, 238, 181);
+
+}
+
+p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+img {
+	margin-top: 10px;
+	width: 80%;
+}
+
+.flex_container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+.flex_container>div {
+	width: 250px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	grid-gap: 10px;
+
+}
+
+.grid-container>div {
+	text-align: center;
+}
+
+#header {
+	grid-column: 1/span 3;
+	background-color: rgb(221, 54, 54);
+}
+
+#main1 {
+	border: 10px double rgb(221, 54, 54);
+	grid-column: 1/span 1;
+}
+
+#main2 {
+	border: 10px double rgb(221, 54, 54);
+	grid-column: 2/span 1;
+}
+
+#right {
+	grid-column: 3/span 1;
+}
+
+#footer {
+	grid-column: 1/span 3;
+	background-color: rgb(221, 54, 54);
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 40% auto;
+		grid-gap: 5px;
+
+	}
+
+	#header {
+		grid-column: 1/span 2;
+	}
+
+	#main1 {
+		grid-column: 1/span 1;
+	}
+
+	#main2 {
+		grid-column: 2/span 1;
+	}
+
+	#right {
+		grid-column: 1/span 2;
+	}
+
+
+	#footer {
+		grid-column: 1/span 2;
+	}
+
+	body {
+		line-height: 15px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+	h3 {
+		font-size: 12px;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 5px;
+
+	}
+
+	#header {
+		grid-column: 1/span 1;
+	}
+
+	#main1 {
+		grid-column: 1/span 1;
+	}
+
+	#main2 {
+		grid-column: 1/span 1;
+	}
+
+	#right {
+		grid-column: 1/span 1;
+	}
+
+
+	#footer {
+		grid-column: 1/span 1;
+	}
+
+	body {
+		line-height: 15px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+	h3 {
+		font-size: 12px;
+	}
+}
