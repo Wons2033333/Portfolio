@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 2px solid #333; 
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
+}
+
+
+
+/* Button styles */
+button {
+    padding: 10px 15px;
+    background-color: #ca4040; 
+    color: white;
+    transition: background-color 0.3s; */
+}
+
+button:hover {
+    background-color: #681111; 
+}
+
+
+#container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; 
+}
+
+#layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    background-color: #fff; 
+    overflow: hidden; 
+
+/* Square styles */
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s; 
+}
+
+
+
+.maroon {
+    background-color: maroon;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.magenta {
+    background-color: magenta;
+}
